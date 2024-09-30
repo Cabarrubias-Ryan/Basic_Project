@@ -20,17 +20,17 @@ namespace Sample_Project
         private void button1_Click(object sender, EventArgs e)
         {
             button1.BackColor = Color.Yellow;
-            this.BackColor = Color.Beige;
+            groupBox1.BackColor = Color.Beige;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.Blue;
+            groupBox1.BackColor = Color.Blue;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.Khaki;
+            groupBox1.BackColor = Color.Khaki;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -46,6 +46,13 @@ namespace Sample_Project
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             this.textBox1.PasswordChar = '*';
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.textBox1.Text = "I am jude";
+            this.button1.Text = "Click me!";
+            this.Text = "I am you";
         }
     }
 }
